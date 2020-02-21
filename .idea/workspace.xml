@@ -2,18 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f7d4481-2cf2-4dad-8d5b-68d9f4ddcacb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/by/javatr/Service/ColorService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/by/javatr/test/test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day2ProjectAtadurdyyev_V2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Day2ProjectAtadurdyyev_V2.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Day2ProjectAtadurdyyev_V2/by/javatr/Service/BallService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Day2ProjectAtadurdyyev_V2/by/javatr/Service/BallService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Day2ProjectAtadurdyyev_V2/by/javatr/entity/Ball.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Day2ProjectAtadurdyyev_V2/by/javatr/entity/Ball.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Day2ProjectAtadurdyyev_V2/by/javatr/entity/Box.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Day2ProjectAtadurdyyev_V2/by/javatr/entity/Box.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Day2ProjectAtadurdyyev_V2/by/javatr/test/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Day2ProjectAtadurdyyev_V2/by/javatr/test/Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/javatr/Service/BallService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/javatr/Service/BallService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Day2ProjectAtadurdyyev_V2/by/javatr/test/A.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Day2ProjectAtadurdyyev_V2/by/javatr/test/A.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Day2ProjectAtadurdyyev_V2/by/javatr/test/B.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Day2ProjectAtadurdyyev_V2/by/javatr/test/B.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Day2ProjectAtadurdyyev_V2/by/javatr/test/C.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Day2ProjectAtadurdyyev_V2/by/javatr/test/C.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/javatr/Service/BoxService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/javatr/Service/BoxService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/by/javatr/entity/Ball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/javatr/entity/Ball.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/by/javatr/entity/Box.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/javatr/entity/Box.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/by/javatr/runner/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/by/javatr/runner/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +56,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.test">
+  <component name="RunManager" selected="Application.Main (1)">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="by.javatr.runner.Main" />
       <module name="Day2ProjectAtadurdyyev_V2" />
@@ -132,9 +129,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.test" />
         <item itemvalue="JUnit.test in Day2ProjectAtadurdyyev_V2" />
-        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Test" />
       </list>
     </recent_temporary>
@@ -169,22 +166,22 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="413" y="116" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.738@0.0.1366.738" timestamp="1582159562879" />
-    <state width="1322" height="182" key="GridCell.Tab.0.bottom" timestamp="1582270769480">
+    <state width="1322" height="182" key="GridCell.Tab.0.bottom" timestamp="1582273046413">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1322" height="182" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1582270769480" />
-    <state width="1322" height="182" key="GridCell.Tab.0.center" timestamp="1582270769480">
+    <state width="1322" height="182" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1582273046413" />
+    <state width="1322" height="182" key="GridCell.Tab.0.center" timestamp="1582273046413">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1322" height="182" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1582270769480" />
-    <state width="1322" height="182" key="GridCell.Tab.0.left" timestamp="1582270769480">
+    <state width="1322" height="182" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1582273046413" />
+    <state width="1322" height="182" key="GridCell.Tab.0.left" timestamp="1582273046413">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1322" height="182" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1582270769480" />
-    <state width="1322" height="182" key="GridCell.Tab.0.right" timestamp="1582270769480">
+    <state width="1322" height="182" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1582273046413" />
+    <state width="1322" height="182" key="GridCell.Tab.0.right" timestamp="1582273046413">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1322" height="182" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1582270769480" />
+    <state width="1322" height="182" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1582273046413" />
     <state width="1322" height="227" key="GridCell.Tab.1.bottom" timestamp="1582259772215">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

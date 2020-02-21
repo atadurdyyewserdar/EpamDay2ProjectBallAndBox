@@ -5,8 +5,10 @@ import by.javatr.entity.Box;
 import by.javatr.util.BallCalculator;
 import by.javatr.util.BoxCalculator;
 
+import javax.swing.text.BoxView;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 public class BoxService
 {
@@ -54,7 +56,7 @@ public class BoxService
         {
             throw new IllegalArgumentException("Illegal argument");
         }
-        double ballWeight = 1 + Math.random() * boxCapacity;
+        double ballWeight = (1 + (int)(Math.random() * boxCapacity));
         int ballCount =(int) (boxCapacity / ballWeight);
         List<Ball> balls = new ArrayList<>();
         for(int i = 0;i<ballCount;i++)
@@ -62,6 +64,13 @@ public class BoxService
             Ball ball = BallService.getRandomColoredBall(ballWeight);
             balls.add(ball);
         }
-        return new Box(boxCapacity, balls);
+        Box box = new Box(boxCapacity, balls);
+        if (BoxCalculator.getAmountOfFreeSpace(box) != 0.0)
+        {
+            double lastElementWeight = BoxCalculator.getAmountOfFreeSpace(box);
+            Ball ball = BallService.getRandomColoredBall(lastElementWeight);
+            BoxService.addBallToBox(box, ball);
+        }
+        return box;
     }
 }
