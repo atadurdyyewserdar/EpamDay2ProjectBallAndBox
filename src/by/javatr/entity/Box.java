@@ -1,5 +1,7 @@
 package by.javatr.entity;
 
+import by.javatr.util.BallCalculator;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
@@ -36,9 +38,9 @@ public class Box
 
     public void setCapacity(double capacity)
     {
-        if (capacity <= 0)
+        if (capacity < BallCalculator.calculateBallsWeight(this.balls))
         {
-            throw new IllegalArgumentException("Capacity can't be 0 or lees 0");
+            throw new IllegalArgumentException("Illegal arg");
         }
         this.capacity = capacity;
     }
@@ -50,7 +52,7 @@ public class Box
 
     public void setBalls(List<Ball> balls)
     {
-        if (balls == null)
+        if (balls == null || BallCalculator.calculateBallsWeight(this.balls) > capacity)
         {
             throw new IllegalArgumentException("Wrong argument");
         }

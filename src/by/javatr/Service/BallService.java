@@ -7,8 +7,11 @@ public class BallService
 {
     public static Ball getRandomColoredBall(double weight)
     {
-        Color[] colors = Color.values();
-        int random = (int)(Math.random() * colors.length);
-        return new Ball(weight, colors[random]);
+        if (weight <= 0)
+        {
+            throw new IllegalArgumentException("Illegal argument");
+        }
+        Color colors = ColorService.getRandomColor();
+        return new Ball(weight, colors);
     }
 }
