@@ -7,15 +7,14 @@ public class Ball
     private double weight;
     private Color color;
 
-    public Ball(double weight, Color color)
-    {
+    public Ball(double weight, Color color) throws Exception {
         if (weight <= 0)
         {
-            throw new IllegalArgumentException("Weight can't be under 0");
+            throw new Exception("Weight can't be under 0");
         }
         else if (color == null)
         {
-            throw new IllegalArgumentException("Color can't be null");
+            throw new Exception("Color can't be null");
         }
         this.weight = weight;
         this.color = color;
@@ -26,11 +25,10 @@ public class Ball
         return weight;
     }
 
-    public void setWeight(double weight)
-    {
+    public void setWeight(double weight) throws Exception {
         if (weight <= 0 )
         {
-            throw new IllegalArgumentException("Weight can't be 0");
+            throw new Exception("Weight can't be 0");
         }
         this.weight = weight;
     }
@@ -40,11 +38,10 @@ public class Ball
         return color;
     }
 
-    public void setColor(Color color)
-    {
+    public void setColor(Color color) throws Exception {
         if (color == null)
         {
-            throw new IllegalArgumentException("Color can't be null");
+            throw new Exception("Color can't be null");
         }
         this.color = color;
     }
@@ -61,14 +58,10 @@ public class Ball
         {
             result = false;
         }
-        else
+        Ball ball = (Ball) o;
+        if (Double.compare(ball.weight, weight) == 0 && color.equals(ball.color))
         {
-            Ball ball = (Ball) o;
-            if (Double.compare(ball.weight, weight) == 0
-                    && color.equals(ball.color))
-            {
-                result = true;
-            }
+            result = true;
         }
         return result;
     }

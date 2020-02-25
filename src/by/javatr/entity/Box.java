@@ -11,21 +11,19 @@ public class Box
     private double capacity;
     private List<Ball> balls;
 
-    public Box(double capacity)
-    {
+    public Box(double capacity) throws Exception {
         if (capacity <= 0)
         {
-            throw new IllegalArgumentException("Illegal argument in Constructor Box");
+            throw new Exception("Illegal argument in Constructor Box");
         }
         this.capacity = capacity;
         balls = new ArrayList<>();
     }
 
-    public Box(double capacity, List<Ball> balls)
-    {
+    public Box(double capacity, List<Ball> balls) throws Exception {
         if (capacity <= 0 || balls == null)
         {
-            throw new IllegalArgumentException("Wrong argument");
+            throw new Exception("Wrong argument");
         }
         this.balls = balls;
         this.capacity = capacity;
@@ -36,11 +34,10 @@ public class Box
         return capacity;
     }
 
-    public void setCapacity(double capacity)
-    {
+    public void setCapacity(double capacity) throws Exception {
         if (capacity < BallCalculator.calculateBallsWeight(this.balls))
         {
-            throw new IllegalArgumentException("Illegal arg");
+            throw new Exception("Illegal arg");
         }
         this.capacity = capacity;
     }
@@ -50,11 +47,10 @@ public class Box
         return balls;
     }
 
-    public void setBalls(List<Ball> balls)
-    {
+    public void setBalls(List<Ball> balls) throws Exception {
         if (balls == null || BallCalculator.calculateBallsWeight(this.balls) > capacity)
         {
-            throw new IllegalArgumentException("Wrong argument");
+            throw new Exception("Wrong argument");
         }
         this.balls = balls;
     }

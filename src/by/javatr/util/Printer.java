@@ -8,11 +8,10 @@ import java.util.List;
 
 public class Printer
 {
-    public static void printBox(Box box)
-    {
+    public static void printBox(Box box) throws Exception {
         if (box == null)
         {
-            throw new IllegalArgumentException("Illegal argument method printBox");
+            throw new Exception("Illegal argument method printBox");
         }
         int i = 1;
         for (Ball ball : box.getBalls())
@@ -22,11 +21,10 @@ public class Printer
         }
     }
 
-    public static void printBallList(List<Ball> balls)
-    {
+    public static void printBallList(List<Ball> balls) throws Exception {
         if (balls == null)
         {
-            throw new IllegalArgumentException("Illegal argument method printBox");
+            throw new Exception("Illegal argument method printBox");
         }
         int i = 1;
         for (Ball ball : balls)

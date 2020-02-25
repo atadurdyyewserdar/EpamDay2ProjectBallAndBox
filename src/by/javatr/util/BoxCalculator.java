@@ -6,11 +6,10 @@ import by.javatr.entity.Color;
 
 public class BoxCalculator
 {
-    public static double calculateCurrentBoxWeight(Box box)
-    {
+    public static double calculateCurrentBoxWeight(Box box) throws Exception {
         if (box == null)
         {
-            throw new IllegalArgumentException("Illegal argument calculateCurrentWeight method");
+            throw new Exception("Illegal argument calculateCurrentWeight method");
         }
         double sum = 0;
         for (Ball ball : box.getBalls())
@@ -20,11 +19,10 @@ public class BoxCalculator
         return sum;
     }
 
-    public static int countBallByColor(Box box, Color color)
-    {
+    public static int countBallByColor(Box box, Color color) throws Exception {
         if (box == null || color == null)
         {
-            throw new IllegalArgumentException("Illegal argument in countBallByColor method");
+            throw new Exception("Illegal argument in countBallByColor method");
         }
         int counter = 0;
         for (Ball ball : box.getBalls())
@@ -37,11 +35,10 @@ public class BoxCalculator
         return counter;
     }
 
-    public static double getAmountOfFreeSpace(Box box)
-    {
+    public static double getAmountOfFreeSpace(Box box) throws Exception {
         if (box == null)
         {
-            throw new IllegalArgumentException("Illegal argument in countBallByColor method");
+            throw new Exception("Illegal argument in countBallByColor method");
         }
         double sum = 0;
         for (Ball ball : box.getBalls())

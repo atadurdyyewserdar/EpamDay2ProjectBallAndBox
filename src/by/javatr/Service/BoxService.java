@@ -12,12 +12,11 @@ import java.util.Random;
 
 public class BoxService
 {
-    public static boolean addBallToBox(Box box, Ball ball)
-    {
+    public static boolean addBallToBox(Box box, Ball ball) throws Exception {
         boolean result = false;
         if (box == null || ball == null)
         {
-            throw new IllegalArgumentException("Null argument method addBallToBox");
+            throw new Exception("Null argument method addBallToBox");
         }
         double currBoxWeight = BoxCalculator.calculateCurrentBoxWeight(box);
         if (currBoxWeight + ball.getWeight() <= box.getCapacity())
@@ -28,11 +27,10 @@ public class BoxService
         return result;
     }
 
-    public static boolean addBallsArrayToBox(Box box, List<Ball> balls)
-    {
+    public static boolean addBallsArrayToBox(Box box, List<Ball> balls) throws Exception {
         if (box == null || balls == null)
         {
-            throw new IllegalArgumentException("Illegal argument in method addBallsToBox");
+            throw new Exception("Illegal argument in method addBallsToBox");
         }
 
         boolean result = false;
@@ -50,11 +48,10 @@ public class BoxService
         return result;
     }
 
-    public static Box getFilledBox(double boxCapacity)
-    {
+    public static Box getFilledBox(double boxCapacity) throws Exception {
         if (boxCapacity < 1)
         {
-            throw new IllegalArgumentException("Illegal argument");
+            throw new Exception("Wrong parameters");
         }
         double ballWeight = (1 + (int)(Math.random() * boxCapacity));
         int ballCount =(int) (boxCapacity / ballWeight);
